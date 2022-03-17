@@ -1,0 +1,63 @@
+package algorism;
+
+import java.util.Scanner;
+
+public class Question {
+
+	public static void main(String[] args) {
+		// 1에서 4까지의 합계를 구하는것
+		// 스캐너를 사용하여 구할것
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int a;
+		int[] b= new int[4];
+		int sum = 0;
+		
+		for(int i =0; i<b.length;i++) {
+		System.out.print("입력 >>");
+		a=sc.nextInt(); 
+		b[i] = a;
+		sum += b[i];
+		System.out.println(sum);
+		}
+		sc.close();
+	}
+
+}
+
+
+//////////////////////////////////////////////////////////////////////
+
+package algorism;
+
+import java.util.Scanner;
+
+public class Question2 {
+
+	public static void main(String[] args) {
+		// 1에서 4까지의 합계를 구하는것
+		// 스캐너를 사용하여 구할것
+		// 입력 1 2 3 4 - 문자열로 받기
+		// 답 10
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String a;
+		String[] b= new String[7];
+		int sum = 0;
+		
+		for(int i =0; i<b.length;i++) {
+		System.out.print("입력 >>");
+		a=sc.next(); 
+		b[i] = a;
+		sum += b[i].trim().charAt(i);
+		System.out.println();
+		
+		
+		}
+		sc.close();
+	}
+
+}
+
